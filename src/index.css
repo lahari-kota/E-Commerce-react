@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.page-full {
+  width: 100%;
+  min-height: 100vh;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 70px - 200px);
+}
+
+.custom-title {
+  @apply text-sky-900 font-bold text-3xl text-center;
+}
+.custom-underline {
+  @apply w-[60px] h-[5px] bg-sky-900 mt-[7px] mx-auto;
+}
+
+.custom-input {
+  @apply w-full px-4 rounded text-black h-11 border border-[#00000029];
+}
+
+.error-message {
+  @apply text-red-700 bg-red-200;
+}
+
+.success-message {
+  @apply text-green-700 bg-green-200;
+}
