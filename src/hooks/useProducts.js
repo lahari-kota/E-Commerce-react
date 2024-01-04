@@ -6,7 +6,7 @@ import {
   QueryClientProvider,
 } from "@tanstack/react-query";
 import apiURLs from "./../services/service";
-import request from "../utils/Request";
+import request from "../utils/request";
 
 const getProducts = async (payload) => {
   const url = apiURLs.getProducts;
